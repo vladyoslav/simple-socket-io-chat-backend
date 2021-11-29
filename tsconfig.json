@@ -1,0 +1,30 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    "outDir": "./build",
+    "rootDir": "./src",
+
+    "baseUrl": ".",
+
+    "types": ["node"],
+
+    "strict": true,
+    "strictPropertyInitialization": false,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+
+  "include": ["src"]
+}
