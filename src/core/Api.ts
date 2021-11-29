@@ -18,7 +18,6 @@ const middlewares: Middleware[] = [
 
 const handlers: Handler[] = [
   newMessage,
-  getMessages,
   disconnect
 ]
 
