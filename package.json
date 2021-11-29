@@ -1,5 +1,5 @@
 {
-  "name": "socket-io-chat-backend",
+  "name": "simple-socket-io-chat-backend",
   "version": "1.0.0",
   "main": "./src/index",
   "license": "MIT",

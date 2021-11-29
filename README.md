@@ -1,4 +1,4 @@
-# socket-io-chat-backend
+# Simple Socket.IO Chat backend
  
 Небольшая практика работы с Socket.IO и TypeORM.
 
