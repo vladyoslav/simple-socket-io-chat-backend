@@ -20,7 +20,7 @@ export const newMessage = new Handler({
       text: validatedText
     })
 
-    await messages.save(message)
+    // await messages.save(message)
 
     console.log(`${context.nickname}: ${validatedText}`)
 
