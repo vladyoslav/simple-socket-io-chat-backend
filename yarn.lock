@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@eolme/normalize@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@eolme/normalize/-/normalize-2.0.0.tgz#a8bd9f1fe8b78da7bf0342ee5e5d9d95bf38662d"
+  integrity sha512-9w5iZaNFRGxe/rCMl6zWuzQEjqX7KlAiAFQPvOxUltLTOguU0EgzNb3t0clxnc0ulnaJRXwc/TKvqA/vCAyxXA==
+
 "@eslint/eslintrc@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.3.tgz#41f08c597025605f672251dcc4e8be66b5ed7366"

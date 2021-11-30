@@ -1,5 +1,5 @@
+import { normalizeCombiningMarks, normalizeSpace } from '@eolme/normalize'
+
 export const validateString = (string: string): string => {
-  return string.slice(0, 100)
-    .replace(/\s+/g, ' ')
-    .trim()
+  return normalizeCombiningMarks(normalizeSpace(string.slice(0, 100)))
 }
