@@ -7,6 +7,7 @@ import { Handler } from './Handler'
 import { context } from '../types'
 import { Middleware } from './Middleware'
 import { connection } from '../middlewares'
+import { validateString } from '../utils'
 
 const app = express()
 const server = http.createServer(app)
@@ -23,7 +24,6 @@ const handlers: Handler[] = [
 
 export class Api {
   async start (): Promise<http.Server> {
-
     middlewares.forEach(middleware =>
       io.use((socket: Socket, next) =>
         middleware.middleware(socket, next)
@@ -32,7 +32,7 @@ export class Api {
 
     io.on('connection', (socket: Socket) => {
       const context: context = {
-        nickname: socket.handshake.query.nickname as string
+        nickname: validateString(socket.handshake.query.nickname as string)
       }
 
       handlers.forEach(handler =>
